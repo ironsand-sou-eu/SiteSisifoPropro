@@ -1,411 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sísifo ProPro</title>
+    <meta
+      name="description"
+      content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo."
+    />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Sísifo ProPro" />
+    <meta
+      property="og:description"
+      content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo."
+    />
+    <meta property="og:image" content="http://propro.sisifo.tec.br/assets/images/screenshot1.jpg" />
+    <meta property="og:url" content="http://propro.sisifo.tec.br" />
+    <meta property="og:site_name" content="Sísifo Propro" />
 
-  <title>Sísifo ProPro</title>
-  <meta name="description" content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo." />
-  <meta name="keywords" content="" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Sísifo ProPro" />
-  <meta property="og:description" content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo." />
-  <meta property="og:image" content="http://propro.sisifo.tec.br/assets/images/screenshot1.jpg" />
-  <meta property="og:url" content="http://propro.sisifo.tec.br" />
-  <meta property="og:site_name" content="Sísifo Propro" />
+    <meta name="twitter:title" content="Sísifo ProPro" />
+    <meta
+      name="twitter:description"
+      content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo."
+    />
+    <meta name="twitter:image" content="http://propro.sisifo.tec.br/assets/images/screenshot1.jpg" />
+    <meta name="twitter:creator" content="@nemfudeno" />
 
+    <!-- Favicons -->
+    <link href="assets/icons/favicon.ico" rel="icon" />
+    <link href="assets/icons/sisifo-ico-192.png" rel="apple-touch-icon" />
 
-  <meta name="twitter:title" content="Sísifo ProPro">
-  <meta name="twitter:description" content="Protocole petições com muito mais facilidade no Projudi TJ/BA. É simples: arraste todos os arquivos de uma só vez para uma caixa que aparecerá na página de protocolo.">
-  <meta name="twitter:image" content="http://propro.sisifo.tec.br/assets/images/screenshot1.jpg">
-  <meta name="twitter:creator" content="@nemfudeno">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
+    <!-- Vendor CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Favicons -->
-  <link href="assets/icons/favicon.ico" rel="icon">
-  <link href="assets/icons/sisifo-ico-192.png" rel="apple-touch-icon">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"> 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Feito à mão, com base no template abaixo:
   * Template Name: Knight - v4.7.0
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <h2 data-aos="zoom-in">Peticione com<br />Praticidade no Projudi TJ/BA</h2>
-      <h6 class="mb-0">com o</h6>
-      <h1 data-aos="zoom-in">Sísifo ProPro</h1>
-      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/sisifo-hero-logo.png" alt=""></a>
-      <h6 data-aos="fade-up">partilhemos o prazer de potencializar<br>o protocolo de suas petições</h6>
-      <br />
-      <a href="#about" class="btn-get-started scrollto">Ponha-me a par!</a>
-    </div>
-  </section><!-- End Hero -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <a href="index.html"><img src="assets/icons/sisifo-ico-192.png" alt="" class="img-fluid"></a>
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <h2 data-aos="zoom-in">Política de privacidade<br /></h2>
+        <h6 class="mb-0">do</h6>
+        <h1 data-aos="zoom-in">Sísifo Cronos Ruy Andrade</h1>
+        <a href="index.html" class="hero-logo" data-aos="zoom-in"
+          ><img src="assets/img/sisifo-hero-logo.png" alt=""
+        /></a>
+        <br />
+        <a href="#privacy-policy" class="btn-get-started scrollto">Ponha-me a par!</a>
       </div>
+    </section>
+    <!-- End Hero -->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Página inicial</a></li>
-          <li><a class="nav-link scrollto" href="#about">Pra que serve?</a></li>
-          <li><a class="nav-link scrollto" href="#services">Preparação</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Passo-a-passo</a></li>
-          <li><a class="nav-link scrollto" href="#team">Pessoal</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Postagens</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Seção Pra que serve ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Pra que serve?</h2>
-          <p>Protocolo de petições no Projudi pensado de forma prática</p>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"><img src="assets/icons/sisifo-ico-192.png" alt="" class="img-fluid" /></a>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="image">
-              <img src="assets/img/sisifo1.jpg" class="img-fluid" alt="">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Página inicial</a></li>
+            <li><a class="nav-link scrollto" href="#services">Preparação</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Seção Política de Privacidade ======= -->
+      <section id="privacy-policy" class="services">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-up">Política de privacidade</h2>
+
+          <div class="row">
+            <div class="col-lg-8 image-wrapper">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-file-find"></i>
+                <h4>Quais dados coletamos e tratamos?</h4>
+                <p>
+                  O Sísifo Cronos trata dados de navegação, especialmente dos sistemas judiciais, quando (e somente
+                  quando) o usuário aciona manualmente a extensão. São tratados, de forma ampla, os dados do processo,
+                  inclusive links contidos no processo (como links para decisões e certidões). Este tratamento é
+                  restrito ao processo atualmente aberto, NÃO havendo consulta ao histórico de navegação (nem da
+                  navegação em geral, nem danavegação pelos sites dos sistemas judiciais).
+                </p>
+                <p>Além disso, são tratados os dados da conta Google fornecida pelo usuário quando solicitado.</p>
+                <p>
+                  NÃO se recolhe nem se trata qualquer outro tipo de dados. A extensão não realiza registro da navegação
+                  (sequer relativa aos sistemas judiciais).
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
-              <h3>Protocole petições no Projudi TJ/BA arrastando e soltando múltiplos arquivos de uma só vez.</h3>
-              <p class="fst-italic">
-                Provavelmente já pensaste: seria perfeito protocolar no Projudi uma peça com múltiplos anexos, sem
-                precisar apensar um por um. Seus problemas acabaram!
-              </p>
-              <ul>
-                <li><i class="bx bx-check-double"></i> Protocole no Projudi de forma prática.</li>
-                <li><i class="bx bx-check-double"></i> Permita que a tecnologia proceda ao trabalho repetitivo por você.</li>
-                <li><i class="bx bx-check-double"></i> Aproveite o potencial de um exclusivo botão "Peticionar" na página inicial do processo.</li>
-                <li><i class="bx bx-check-double"></i> Na página de peticionamento, puxe os apensos para caixa -- e pronto!</li>
-              </ul>
-              <p>
-                Prossiga para o passo-a-passo com <em>prints</em> no próximo parágrafo e perceba como é prático, perfeito, prodigioso!
-              </p>
+          <hr />
+          <div class="row">
+            <div class="col-lg-8 image-wrapper mx-auto">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bxs-book-content"></i>
+                <h4>Para que tratamos os dados?</h4>
+                <p>
+                  Os dados de navegação do usuário em geral são tratados exclusivamente quando um site está aberto, para
+                  verificar se o site atualmente aberto é um sistema judicial compatível.
+                </p>
+                <p>
+                  Os dados de navegação do usuário específicos dos sistemas judiciais são tratados de acordo com as
+                  diretrizes do escritório Ruy Andrade Advogados Associados, sendo utilizados exclusivamente para
+                  alimentar suas bases de dados de controle de informações processuais em outros sistemas.
+                </p>
+                <p>
+                  Por fim, os dados de login do Google são usados apenas para verificar se o usuário pertence à
+                  corporação e para conceder acesso às planilhas Google que contém as configurações do Sísifo Cronos.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section><!-- Fim da Seção Pra que serve -->
-
-    <!-- ======= Seção Passo-a-Passo ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Preparação</h2>
-          <p>(em prol da clareza, pausaremos, por ora, as aliterações)</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 image-wrapper">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bxl-chrome"></i>
-              <a href="https://chrome.google.com/webstore/detail/s%C3%ADsifo-propro/kjdmkgniognehnfjggmlicndljjjkmag/" target="blank">
-                <h4>Instale o Sísifo Propro no seu navegador</h4>
-                <p>O Sísifo Propro é certificado para uso no Google Chrome. <strong>Clique aqui</strong> para abrir a página da
-                  extensão; então, clique em "Usar no Chrome". Na caixa de confirmação, clique em "Adicionar extensão".</p>
-              </a>
+          <hr />
+          <div class="row">
+            <div class="col-lg-8 image-wrapper ms-auto">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-check-shield"></i>
+                <h4>Por quanto tempo os dados são mantidos? Qual é a política de segurança?</h4>
+                <p>
+                  A extensão NÃO mantém dados do usuário em bases de dados ou outro tipo de persistência de dados. Os
+                  dados de navegação, quer gerais, quer de sistemas judiciais, são utilizados pela extensão apenas no
+                  momento do uso, para as finalidades descritas acima. Os dados da navegação em si não são guardados
+                  pela extensão, e apenas os dados processuais coletados são enviados para os sistemas do escritório,
+                  onde são guardados nas respectivas bases de dados.
+                </p>
+                <p>
+                  A única possibilidade de dados pessoais guardados é a eventual indicação do usuário que realizou o
+                  cadastro no texto descritivo de determinada informação processual (embora normalmente isso seja feito
+                  com um usuário próprio da extensão).
+                </p>
+                <p>
+                  Como não há persistência de dados, a política de segurança dos dados tratados é a do Google, para o
+                  tráfego de informações do login na conta Google, e a do sistema utilizado pelo escritório, para o
+                  tráfego de informações para o respectivo sistema, atualmente o Projuris. Em ambos os casos, o tráfego
+                  se faz com servidores criptografados, com o protocolo HTTPS. Para a política de segurança dos dados
+                  após o cadastro nos referidos sistemas, recomendamos buscar a empresa provedora do serviço.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 image-wrapper">
-            <picture>
-              <!-- <source media="(min-width:1400px)" srcset="assets/img/ss-bt-peticionar600.jpg">
-              <source media="(min-width:1200px)" srcset="assets/img/ss-bt-peticionar480.jpg"> -->
-              <img src="assets/img/ss-ext-adicionar.jpg" alt="Capa do processo com botão Peticionar">
-            </picture>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-lg-8 image-wrapper mx-auto">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-sync"></i>
-              <h4>Não precisa sincronizar &mdash; mas se quiser, pode</h4>
-              <p>Se o Chrome solicitar "Ativar a sincronização", não é necessário fazer isso. Pode fechar esta caixa
-                de diálogo (embora você possa fazer a sincronização, caso ache conveniente; assim, a extensão já estará
-                instalada no Chrome de outros computadores em que você estiver logado).</p>
-              </p>
+          <hr />
+          <div class="row">
+            <div class="col-lg-8 image-wrapper mx-auto">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-share-alt"></i>
+                <h4>Os dados são compartilhados com algum terceiro?</h4>
+                <p>
+                  Os dados tratados pela extensão são compartilhados exclusivamente com o Google e com o sistema
+                  utilizado pelo escritório, nas formas descritas acima.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-lg-8 image-wrapper mx-auto">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-message-square-check"></i>
-              <h4>Pronto para usar!</h4>
-              <p>A extensão fará efeito automaticamente, inserindo um botão "Peticionar" nas páginas
-                iniciais de processos no Projudi e inserindo uma caixa de "arraste os arquivos aqui"
-                nas páginas de peticionamento.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- Fim da Seção Passo-a-Passo -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Passo-a-passo</h2>
-      </div>
-    
-      <div class="container" data-aos="zoom-in">
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-square me-4"></i>
-                    <h3>Passo zero (opcional): Utilize o botão Peticionar</h3>
-                  </div>
-                  <p>O Sísifo Propro insere um botão "Peticionar" exclusivo na barra de <em>links</em> do processo,
-                    logo acima da tabela de arquivos.</p>
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-bt-peticionar600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-bt-peticionar480.jpg">
-                    <img src="assets/img/ss-bt-peticionar380.jpg" class="img-fluid" alt="Capa do processo com botão Peticionar">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-dice-1 me-4"></i>
-                    <h3>Passo 1: Confirme que a caixa apareceu</h3>
-                  </div>
-                  <p>O Sísifo Propro insere uma caixa para onde arrastar os arquivos na tela de peticionar, 
-                    acima do botão de "adicionar documento".</p>
-                  <p>A caixa aparece mesmo que não se tenha usado o botão "Peticionar" do passo anterior.
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-caixa-peticionar600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-caixa-peticionar480.jpg">
-                    <img src="assets/img/ss-caixa-peticionar380.jpg" class="img-fluid" alt="Página de peticionamento com caixa para arrastar arquivos">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-            
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-dice-2 me-4"></i>
-                    <h3>Passo 2: Prepare seus arquivos</h3>
-                  </div>
-                  <p>Deixe a petição e todos os arquivos que serão anexados na mesma pasta, na ordem desejada.</p>
-                  <p>Se houver anexos em pastas diferentes, os demais poderá ser inseridos da mesma forma depois.</p> 
-                  <p>Deixe a janela ao lado da janela do Projudi (ou à frente, com tamanho menor).</p>
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-preparacao-arquivos600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-preparacao-arquivos480.jpg">
-                    <img src="assets/img/ss-preparacao-arquivos380.jpg" class="img-fluid" alt="Arrumação dos arquivos">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-            
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-dice-3 me-4"></i>
-                    <h3>Passo 3: Arraste os arquivos para a caixa</h3>
-                  </div>
-                  <p>Arraste os arquivos para a caixa.</p>
-                  <p>É recomendável clicar na petição para arrastar, pois o arquivo que você clicar para começar a
-                    arrastar é o arquivo que ficará no topo. Os demais serão inseridos na mesma ordem em que estavam
-                    na pasta.</p>
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-arrastar600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-arrastar480.jpg">
-                    <img src="assets/img/ss-arrastar380.jpg" class="img-fluid" alt="Arraste dos arquivos">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-dice-4 me-4"></i>
-                    <h3>Passo 4: Confira se houve erros</h3>
-                  </div>
-                  <p>Caso algum arquivo não tenha sido inserido (por exemplo, porque o tipo não é permitido), a 
-                    caixa ficará vermelha, avisando quais arquivos não foram inseridos.</p>
-                  <p>Fique atento, pois o próprio Projudi também pode rejeitar arquivos, da forma padrão (exibindo
-                    um alerta de arquivo muito grande, por exemplo).</p>
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-erro600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-erro480.jpg">
-                    <img src="assets/img/ss-erro380.jpg" class="img-fluid" alt="Tela de erro">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item row">
-                <div class="col-lg-6">
-                  <div class="d-flex flex-row align-items-center my-4">
-                    <i class="bx bx-dice-5 me-4"></i>
-                    <h3>Passo 5: Conferir e finalizar</h3>
-                  </div>
-                  <p>Confira se todos os arquivos desejados foram inseridos.</p>
-                  <p>A partir daqui, siga o peticionamento padrão do Projudi: os arquivos inseridos estarão
-                    listados; você pode alterar o tipo ou nome e remover arquivos clicando no X vermelho.</p>
-                  <p>Se tudo estiver certo, digite sua senha, clique em "Inserir" e finalize na próxima tela.</p>
-                </div>
-                <div class="col-lg-6 img-wrapper">
-                  <picture>
-                    <source media="(min-width:1400px)" srcset="assets/img/ss-revisar600.jpg">
-                    <source media="(min-width:1200px)" srcset="assets/img/ss-revisar480.jpg">
-                    <img src="assets/img/ss-revisar380.jpg" class="img-fluid" alt="Tela de sucesso para revisar">
-                  </picture>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Pessoal</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mx-auto d-flex align-items-stretch">
-            <div class="member" data-aos="zoom-in">
-              <div class="member-img">
-                <img src="assets/img/cesar.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.instagram.com/brodriguez.cesar/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/c%C3%A9sar-rodriguez-658a53216/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>César Rodriguez</h4>
-                <span>Desenvolvedor</span>
-                <p>Um profissional do texto e das línguas: advogado, desenvolvedor e escritor nas horas vagas, dedicado
-                  a ajudar as pessoas a resolverem seus problemas &mdash; fascinado por tecnologia, transformação digital
-                  e automação.
+          <hr />
+          <div class="row">
+            <div class="col-lg-8 image-wrapper">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-phone"></i>
+                <h4>Contato</h4>
+                <p>
+                  Em caso de dúvidas, contate-nos através do Discord do escritório ou pelo e-mail sisifo@ruyandrade.com.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- Fim da Seção Passo-a-Passo -->
+    </main>
+    <!-- End #main -->
 
-      </div>
-    </section><!-- End Team Section -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <footer>
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Postagens</h2>
-          <p>Por oportuno: para exprimir palavras de apoio, propor aprimoramentos, postar seus protestos &mdash; pode até pagar uma pinga!</p>
-        </div>
-        
-        <div class="row">
-          <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
-            <a href="mailto:nos@sisifo.tec.br" class="mx-auto">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>nos@sisifo.tec.br</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <p class="final">Sísifo.tec, 2021</p>
-        
-      </div>
-    </section><!-- End Contact Section -->    
-  </footer>
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
